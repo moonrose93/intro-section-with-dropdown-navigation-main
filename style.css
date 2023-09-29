@@ -121,7 +121,7 @@ align-items: center;
 /*Now we set the width for the left and right divs.*/
 
 .right{
-    width: 800px;
+    width: 400px;
     
     margin-left: -10px
 }
@@ -288,7 +288,7 @@ And set width just for the main div not on the left and right divs they will res
 
 .main{
     display: flex;
-    width: 1800px;
+    width: 1900px;
     height: 800px;
     position: absolute;
     transform: translate(-50%,-50%);
