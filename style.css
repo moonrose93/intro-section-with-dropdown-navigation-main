@@ -1,0 +1,649 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    width: 1200px;
+    height: 900px;
+    padding: 20px;
+
+   
+}
+
+.nav-bar{
+    display: flex;
+    width: 1800px;
+    height: 100px;
+    align-items: center;
+    z-index: 1;
+    font-size: 1rem;
+    position: fixed;
+}
+.logo{
+    width: 5%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    margin-left: 50px;
+    
+}
+
+.logos{
+    display: flex;
+    margin-top: 200px;
+    margin-left: -30px;
+
+}
+
+.logos{
+    width: 7%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.login{
+   position: absolute;
+   left: 1650px;
+   cursor: pointer;
+}
+
+.register{
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+    left:1750px;
+    outline:none;
+ 
+}
+
+.register:hover{
+color: black;
+font-weight: bold;
+}
+
+.menus{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin-right: 850px;
+    margin-left: 80px;
+}
+
+.icon-todo-img,
+.reminders-img,
+.planning-img,
+.calendar-img{
+margin-right: 20px;
+width: 15px;
+height: 15px;
+align-items: center;
+}
+
+.drop-down-menu-1{
+    width: 130px;
+    height: 140px;
+    background-color: white;
+    box-shadow: 0px 5px 30px 3px rgb(201, 196, 196);
+    margin: 0;
+    border-radius: 10px;
+    padding: 10px;
+    position:fixed;
+    top: 80px;
+    right: 1600px;
+    display: none;
+
+}
+
+
+.paragraph{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: rgb(94, 92, 92);
+}
+
+
+.main-heading{
+    font-size: 7rem;
+    margin-top: -20px;
+    line-height: 6rem;
+
+}
+
+/*Now we set the width for the left and right divs.*/
+
+.right{
+    width: 800px;
+    
+    margin-left: -10px
+}
+.left{
+    width: 700px;
+    margin-left: 140px;
+    margin-top: 190px;
+    z-index: 1;
+}
+
+
+.drop-down-menu-2{
+    width: 100px;
+    height: 110px;
+    background-color: white;
+    box-shadow: 0px 5px 30px 3px rgb(201, 196, 196);
+    margin: 0;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    top: 80px;
+    right: 1460px;
+    z-index: 2;
+    display: none;
+}
+
+
+
+
+.to-do:hover,
+.calendar:hover,
+.reminders:hover,
+.planning:hover{
+    color: rgb(66, 65, 156);
+}
+
+
+.history:hover,
+.our-team:hover,
+.blog:hover{
+    color: rgb(66, 65, 156);
+    cursor: pointer;
+    
+}
+
+.history{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.our-team{
+    position: absolute;
+    top:40px;
+    left: 20px;
+}
+
+.blog{
+    position: absolute;
+    top:70px;
+    left:20px;
+}
+
+
+
+
+.features,
+.company,
+.careers,
+.about{
+    display: flex;
+    cursor: pointer;
+}
+
+.about{
+    position: absolute;
+    left: 580px;
+}
+
+.careers{
+    position: absolute;
+    left:480px
+}
+
+.company{
+    position: absolute;
+    left:350px;
+}
+
+
+
+
+.features:hover,
+.company:hover,
+.careers:hover,
+.about:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.login:hover{
+    color: black;
+    font-weight: bold;
+}
+
+/*We separate the arrows and we will style them separately*/
+.arrow-down{
+   width: 15%;
+   aspect-ratio: 3/2;
+   height: 10px;
+   object-fit: contain;
+   margin-top: 20px;
+   margin-left: 10px;
+   
+}
+
+.arrow-up{
+    width: 15%;
+   aspect-ratio: 3/2;
+   height: 8px;
+   object-fit: contain;
+   margin-left: -30px;
+   position: absolute;
+   margin-top: 22px;
+   display: none;
+
+}
+
+
+.main-mobile{
+    display: none;
+}
+
+
+
+
+
+.to-do,
+.calendar,
+.reminders,
+.planning{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.to-do{
+    position: absolute;
+}
+.calendar{
+    position: absolute;
+    top: 40px;
+}
+
+.planning{
+    position: absolute;
+    top: 100px;
+}
+
+/*We center the main container in the middle of the page.
+And set width just for the main div not on the left and right divs they will resize based on the width of the elements and will look just right*/
+
+.main{
+    display: flex;
+    width: 1800px;
+    height: 800px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+   
+}
+
+
+
+
+
+.reminders{
+    position: absolute;
+    top:70px;
+
+}
+
+.btn{
+    padding: 20px 40px;
+    position: absolute;
+    top:580px;
+    letter-spacing: 0.06rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color:black;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.btn:hover{
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+
+
+
+
+
+.image-right{
+    margin-top: 60px;
+    width: 1080px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.databiz,
+.audiophile,
+.client-meet,
+.client-maker{
+    aspect-ratio:3/1;
+    object-fit: contain;
+    width: 150px;
+   margin-left: 40px;
+}
+
+.menus-container-mobile{
+    display: none;
+}
+
+
+.nav-bar-mobile{
+    display: none;
+}
+
+@media(max-width:480px){
+
+.main{
+    display: none;
+}
+
+.menus{
+    display: none;
+}
+
+.main-mobile{
+    display: block;
+    width: 400px;
+    align-items: center;
+    
+}
+
+
+
+.image-up-mobile{
+    width: 415px;
+    position: relative;
+    bottom: 70px;
+}
+
+.up{
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.paragraph-mobile{
+    font-size: 1.1rem;
+    text-align: center
+}
+
+.main-heading-mobile{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: -20px;
+}
+
+.nav-bar{
+    display: none;
+}
+.btn-mobile{
+    padding: 20px 40px;
+    position: absolute;
+    top:580px;
+    letter-spacing: 0.06rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color:black;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-left: 108px;
+    margin-top: 40px;
+}
+
+.logos{
+    display: flex;
+    margin-top: 160px;
+    margin-left: 20px;
+}
+
+
+.databiz,
+.audiophile,
+.client-meet,
+.client-maker{
+    aspect-ratio:3/1;
+    object-fit: contain;
+    width: 300px;
+    height: 25px;
+   margin-left: 15px;
+   
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-bar-mobile{
+    display: block;
+    width: 100px;
+}
+
+.menus-container-mobile{
+    display: none;
+    position: absolute;
+    left: 160px;
+    top:-10px;
+    background-color: white;
+    width: 255px;
+    height: 100vh;
+    z-index: 3;
+}
+
+.features-mobile{
+    position: absolute;
+    top:80px;
+    display: flex;
+}
+
+
+.company-mobile{
+    position: absolute;
+    top:120px;
+    display: flex;
+}
+
+.drop-down-menu-2-mobile{
+    position: absolute;
+    top: 160px;
+    z-index: 2;
+    width: 100px;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    display: none;
+}
+
+.careers-mobile{
+    position: absolute;
+    top: 200px;
+}
+
+.features-mobile,
+.careers-mobile,
+.company-mobile{
+    font-size: 1.2rem;
+    color: rgb(94, 92, 92);
+    width: 230px;
+    margin-left: 20px;
+
+}
+
+.to-do{
+    width: 240px;
+}
+
+
+.login-btn{
+    position: absolute;
+    top:560px;
+    justify-content: center;
+    width: 200px;
+    margin-left: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(94, 92, 92);
+}
+
+
+.icon-close{
+    position: absolute;
+    top:50px;
+    left:200px;
+}
+
+.burger-menu{
+    position: absolute;
+    left: 355px;
+    top:30px;
+}
+
+.drop-down-menu-1-mobile{
+    position: absolute;
+    top: 120px;
+    width: 100px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    display: none;
+}
+
+.to-do,
+.calendar,
+.reminders,
+.planning{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgb(94, 92, 92);
+}
+
+.history,
+.our-team,
+.blog{
+    color: rgb(94, 92, 92);
+}
+
+.arrow-down-mobile{
+    width: 11%;
+    aspect-ratio: 3/2;
+    height: 7px;
+    object-fit: contain;
+    margin-top: 30px;
+    margin-left: 10px;
+    
+ }
+ .careers-mobile2{
+    position: absolute;
+    bottom: 40px;
+}
+ 
+ .arrow-up-mobile{
+     width: 11%;
+    aspect-ratio: 3/2;
+    height: 7px;
+    object-fit: contain;
+    margin-left: -30px;
+    position: absolute;
+    margin-top: 22px;
+    display: none;
+ 
+ }
+
+ .register-mobile{
+    padding: 10px 60px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(94, 92, 92);
+    outline:none;
+ 
+}
+
+.reminders{
+    position: absolute;
+    top:80px;
+
+}
+.planning{
+    position: absolute;
+    top: 120px;
+}
+
+.logo-mobile{
+    
+    margin-left: 20px;
+    margin-top: 30px
+    
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.753); /* Adjust the alpha value for the desired darkness */
+    display: none; /* Initially hidden */
+    z-index: 2; /* Ensure the overlay is on top of other elements */
+  }
+
+
+
+
+
+   
+
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+

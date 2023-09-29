@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Intro section with dropdown navigation</title>
+</head>
+<body>
+
+  <div class="conatiner">
+  <div class="nav-bar">
+    <img  class="logo" src="./logo.svg" alt="logo">
+
+    <div  id="drop-down-menu-1" class="drop-down-menu-1">
+      <div class="to-do"><img class="icon-todo-img" src="./icon-todo.svg" alt="icon-todo"><p class="todo-p">Todo List</p></div>
+      <div class="calendar"><img class="calendar-img" src="./icon-calendar.svg" alt="calendar"><p class="calendar-p">Calendar</p></div>
+      <div class="reminders"><img class="reminders-img" src="./icon-reminders.svg" alt="calendar"><p class="reminders-p">Reminders</p></div>
+      <div class="planning"><img  class="planning-img"  src="./icon-planning.svg" alt="calendar"><p class="planning-p">Planning</p></div>
+    </div>
+
+    <div id="drop-down-menu-2" class="drop-down-menu-2">
+      <p class="history">History</p>
+      <p class="our-team">Our Team</p>
+      <p class="blog">Blog</p>
+    </div>
+    <!--We set the menus in one div container and the login and button register outside of it so that we can change the positions of those elements with positions.
+      And the menus are closer to the logo with margin and separated with justify content -space between, also we set width of the menu div and display flex to set them in one column.Also the arrow 
+    --> 
+    <div class="menus">
+      <div id="features" class="features"><p>Features</p><img id="arrow-up" class="arrow-up" src="./icon-arrow-up.svg" alt="icon-arrow-up"><img id="arrow-down" class="arrow-down" src="./icon-arrow-down.svg" alt="arrow-down"></div>
+      <div id="company" class="company"><p>Company</p><img id="arrow-up"  class="arrow-up" src="./icon-arrow-up.svg" alt="icon-arrow-up"><img id="arrow-down" class="arrow-down" src="./icon-arrow-down.svg" alt="arrow-down"></div>
+      <p class="careers">Carrers</p>
+      <p class="about">About</p>
+    </div>
+    <p class="login">Login</p>
+      <button class="register">Register</button>
+  </div>
+<!--We resize the main container and also the left and right containers after we set  the font size for the design 
+    --> 
+  <div class="main">
+
+    <div class="left">
+      <h1 class="main-heading">Make<br> remote work</h1>
+    <p class="paragraph"> Get your team in sync, no matter your location.<br>Streamline processes, 
+      create team rituals, and<br>watch productivity soar.</p>
+      <button class="btn">Learn More</button>
+      <div class="logos">
+        <img class="databiz" src="./client-databiz.svg" alt="client-databiz">
+        <img class="audiophile" src="./client-audiophile.svg" alt="client-audiophile">
+        <img class="client-meet" src="./client-meet.svg" alt="client-meet">
+        <img class="client-maker" src="./client-maker.svg" alt="client-maker">
+      </div>
+    </div>
+
+    <div class="right">
+      <img  class="image-right" src="./image-hero-desktop.png" alt="image-hero">
+    </div>
+  </div>
+
+
+  <!--Mobile-->
+  <div class="main-mobile">
+    
+    <div class="nav-bar-mobile">
+      <img  class="logo-mobile" src="./logo.svg" alt="logo"> 
+      <div  id="burger-menu"class="burger-menu"><img src="./icon-menu.svg" alt="icon-menu"></div>
+      </div>
+  
+      <div class="overlay"></div>
+      <div  id="menus-container-mobile"  class="menus-container-mobile">
+        <img id="icon-close"  class="icon-close"    src="./icon-close-menu.svg" alt="icon-close-menu">
+        <div   id="features-mobile"  class="features-mobile"><p>Features</p><img  id="arrow-up-mobile"  class="arrow-up-mobile" src="./icon-arrow-up.svg" alt="icon-arrow-up-mobile"><img id="arrow-down-mobile" class="arrow-down-mobile" src="./icon-arrow-down.svg" alt="arrow-down"></div>
+        <div id="drop-down-menu-1-mobile" class="drop-down-menu-1-mobile">
+          <div class="to-do"><img class="icon-todo-img" src="./icon-todo.svg" alt="icon-todo"><p class="todo-p">Todo List</p></div>
+          <div class="calendar"><img class="calendar-img" src="./icon-calendar.svg" alt="calendar"><p class="calendar-p">Calendar</p></div>
+          <div class="reminders"><img class="reminders-img" src="./icon-reminders.svg" alt="calendar"><p class="reminders-p">Reminders</p></div>
+          <div class="planning"><img  class="planning-img"  src="./icon-planning.svg" alt="calendar"><p class="planning-p">Planning</p></div>
+        </div>
+        
+        <div id="company-mobile" class="company-mobile"><p>Company</p><img id="arrow-up-mobile" class="arrow-up-mobile" src="./icon-arrow-up.svg" alt="icon-arrow-up-mobile"><img id="arrow-down-mobile" class="arrow-down-mobile" src="./icon-arrow-down.svg" alt="arrow-down"></div>
+        <div id="drop-down-menu-2-mobile" class="drop-down-menu-2-mobile">
+          <p class="history">History</p>
+          <p class="our-team">Our Team</p>
+          <p class="blog">Blog</p>
+        </div>
+      <div id="careers-mobile" class="careers-mobile">
+        <p class="careers-mobile2">Careers</p>
+        <p class="about-mobile">About</p>
+      </div>
+       <div class="login-btn">
+        <p class="login-mobile">Login</p>
+        <button class="register-mobile">Register</button>
+       </div>
+    </div>
+      
+     
+      <div class="up">
+      <img  class="image-up-mobile" src="./image-hero-mobile.png" alt="image-hero">
+    </div>
+    <div class="down">
+      <h1 class="main-heading-mobile">Make remote work</h1>
+    <p class="paragraph-mobile"> Get your team in sync, no matter your<br>location.Streamline processes, 
+      create<br> team rituals, and watch productivity soar.</p>
+      <button class="btn-mobile">Learn More</button>
+      <div class="logos">
+        <img class="databiz" src="./client-databiz.svg" alt="client-databiz">
+        <img class="audiophile" src="./client-audiophile.svg" alt="client-audiophile">
+        <img class="client-meet" src="./client-meet.svg" alt="client-meet">
+        <img class="client-maker" src="./client-maker.svg" alt="client-maker">
+      </div>
+    </div>
+  </div>
+
+  </div>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
